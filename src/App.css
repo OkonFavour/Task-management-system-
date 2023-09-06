@@ -1,0 +1,115 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Background color for the body */
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fff; /* Background color for the app */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: black;
+}
+
+.task {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.task button {
+  background-color: #ff5757;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task button:hover {
+  background-color: #ff0000;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  color: #888;
+}
+
+::placeholder{
+  /* background-color: white; */
+  color: white;
+}
+
+/* Styling for input fields */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Styling for the date picker input (react-datepicker) */
+.react-datepicker-wrapper input {
+  width: 50%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+/* For screens smaller than 600px (e.g., smartphones) */
+@media (max-width: 600px) {
+  .task {
+    flex-direction: column;
+  }
+  
+  .task button {
+    margin-top: 10px;
+  }
+}
+
+/* For screens between 600px and 1024px (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .App {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
