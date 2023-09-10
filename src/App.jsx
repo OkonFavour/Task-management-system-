@@ -7,8 +7,8 @@ import './App.css';
 function App() {
   const [tasks, setTasks] = useState([]);
 
-  const addTask = (task) => {
-    setTasks([...tasks, task]); // Append the new task to the existing list
+  const addTask = (newTask) => {
+    setTasks([...tasks, {...newTask, id: Date.now()}]);
   };
 
   const deleteTask = (id) => {

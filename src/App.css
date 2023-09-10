@@ -25,6 +25,7 @@ h1 {
   margin: 10px 0;
   padding: 10px;
   display: flex;
+  color: black;
   justify-content: space-between;
   align-items: center;
   background-color: #f9f9f9;
